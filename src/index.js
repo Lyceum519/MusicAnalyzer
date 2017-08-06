@@ -1,1 +1,1 @@
-require('./musicAnalyzer')
+import main from './musicAnalyzer'
