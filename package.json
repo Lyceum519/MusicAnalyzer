@@ -1,0 +1,24 @@
+{
+  "name": "musicAnalyzer",
+  "version": "1.0.0",
+  "description": "MusicAnalyzer using machine learning",
+  "main": "./lib",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev"  : "webpack-dev-server --config webpack.config.dev.js"
+  },
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
