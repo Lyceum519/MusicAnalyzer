@@ -165,4 +165,5 @@ fabric.properties
 # And more
 .idea/
 build/
+dist/
 _backup/
