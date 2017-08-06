@@ -1,4 +1,4 @@
-var test = require('./util/getDecodeData.js')
+import test from './util/getDecodeData.js'
 
 
-console.log(test.getDecodeData());
+console.log(test());

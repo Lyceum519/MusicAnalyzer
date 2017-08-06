@@ -1,4 +1,4 @@
-exports.getDecodeData = function() {
+export default function getDecodeData() {
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 var source;
 var temp = new Uint8Array( 1200 );
