@@ -1,4 +1,5 @@
-export default function getDecodeData() {
+console.log(1);
+exports.getDecodeData = function() {
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 var source;
 var temp = new Uint8Array( 1200 );
@@ -7,7 +8,7 @@ function getData() {
   source = audioCtx.createBufferSource();
   var request = new XMLHttpRequest();
 
- request.open('GET', '../../audio/Odesza_Above_The_Middle.mp3', true);
+ request.open('GET', '../audio/Odesza_Above_The_Middle.mp3', true);
   request.responseType = 'arraybuffer';
 
 
