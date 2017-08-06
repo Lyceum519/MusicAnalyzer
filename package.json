@@ -4,6 +4,7 @@
   "description": "MusicAnalyzer using machine learning",
   "main": "./lib",
   "scripts": {
+    "babel": "babel --presets es2015 src/index.js -o dist/bundle.js",
     "build": "webpack --config webpack.config.prod.js",
     "dev"  : "webpack-dev-server --config webpack.config.dev.js"
   },
