@@ -1,4 +1,3 @@
-console.log(1);
 exports.getDecodeData = function() {
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 var source;
