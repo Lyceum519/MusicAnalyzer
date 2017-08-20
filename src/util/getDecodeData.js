@@ -17,7 +17,7 @@ var decodeAudioData = function(callback) {
   var request = new XMLHttpRequest();
 
   request.responseType = 'arraybuffer';
-  request.open('GET', '../audio/Odesza_Above_The_Middle.mp3', true);
+  request.open('GET', '../audio/Drum1_snare.mp3', true);
 
   request.onload = function() {
     var audioData = request.response;
@@ -42,7 +42,7 @@ var decodeAudioData = function(callback) {
       return buffer;
     },
     function(e) {
-      console.log("Error with decoding audio data" + e.err); 
+      console.log("Error with decoding audio data" + e.err);
       callback(null);
     });
   }
