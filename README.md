@@ -5,6 +5,8 @@ Music Analyzer using tensorflow
 
 
 by
-wonyeong Jung2
+wonyeong Jung
 jaeseung Kim
 sangwoo Wi
+minjae Lee
+jaeho Lee
