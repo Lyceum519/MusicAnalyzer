@@ -20,6 +20,17 @@
          * the page content. *@
         @content
 
-      <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+        @helper.form(action = routes.HomeController.upload, 'enctype -> "multipart/form-data") {
+
+            <input type="file" name="picture">
+
+            <p>
+                <input type="submit">
+            </p>
+
+        }
+
+        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/jquery-3.2.1.min.js")" type="text/javascript"></script>
     </body>
 </html>

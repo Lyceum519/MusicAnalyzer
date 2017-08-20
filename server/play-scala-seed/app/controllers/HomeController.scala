@@ -1,8 +1,13 @@
 package controllers
 
 import javax.inject._
+import javax.swing.JLayeredPane
+
 import play.api._
 import play.api.mvc._
+import play.mvc.Security.Authenticated
+import views.html.defaultpages.badRequest
+import play.api.Play.current
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -21,4 +26,19 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   def index() = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
   }
+
+  def upload() = Action { implicit request : Request[AnyContent] =>
+    request.body.asMultipartFormData.map{ picture =>
+      import java.io.File
+
+      val filename = picture.file("picture" ).get.filename
+      val contentType = picture.file("picture").get.contentType;
+      picture.file("picture").get.ref.moveTo( new File( play.Environment.simple().rootPath() + "/tmp/picture/" + filename  ) );
+      Ok( views.html.index() );
+    }.getOrElse {
+      Redirect( routes.HomeController.index() ).flashing(
+        "error" -> "Missing file")
+    }
+  }
+
 }
