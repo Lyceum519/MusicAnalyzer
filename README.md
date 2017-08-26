@@ -4,9 +4,6 @@ Music Analyzer using tensorflow
 by
 wonyeong Jung
 jaeseung Kim
-jaeho Lee
-minjae Lee
-sangwu Wi
 
 # MusicAnalyzer
   Music Analyzer using tensorflow
@@ -32,14 +29,14 @@ Within the download you'll find the following directories and files, logically g
 
 ```
 aaa/
-¦§¦¡¦¡ bbb/
-¦¢   ¦§¦¡¦¡ ccc
-¦¢   ¦§¦¡¦¡ ddd
-¦¢   ¦§¦¡¦¡ eee
-¦¢   ¦¦¦¡¦¡ fff
-¦¦¦¡¦¡ ggg/
-    ¦§¦¡¦¡ hhh
-    ¦¦¦¡¦¡ iii
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ bbb/
+ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ccc
+ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ddd
+ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ eee
+ï¿½ï¿½   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ fff
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ggg/
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ hhh
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ iii
 ```
 
 We provide blablabla. And others are available for use with certain browsers' developer tools.
@@ -65,3 +62,13 @@ Please read through our [contributing guidelines](https://github.com/Lyceum519/M
 ## Copyright and license
 
 Code and documentation copyright
+
+---
+## Collaborative Filtering
+```
+scipy.spatial.distance.cosine(u, v)
+```
+ì½”ì‚¬ì¸ ìœ ì‚¬ë„ ì¸¡ì •ì„ í†µí•œ ë§¤ì¹­ ë¶€ë¶„ íŒŒì•… ì‹œë„.
+ê²°ê³¼ë¬¼ [LINK](https://github.com/Lyceum519/MusicAnalyzer/blob/exp/jupyter/README.md)
+
+---
