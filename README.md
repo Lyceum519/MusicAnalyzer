@@ -1,11 +1,4 @@
 # MusicAnalyzer
-Music Analyzer using tensorflow
-
-by
-wonyeong Jung
-jaeseung Kim
-
-# MusicAnalyzer
   Music Analyzer using tensorflow
   
 ## Table of contents
@@ -72,3 +65,8 @@ scipy.spatial.distance.cosine(u, v)
 결과물 [LINK](https://github.com/Lyceum519/MusicAnalyzer/blob/exp/jupyter/README.md)
 
 ---
+=======
+sangwoo Wi
+minjae Lee
+jaehoo Lee
+
