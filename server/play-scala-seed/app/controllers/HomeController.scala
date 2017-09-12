@@ -28,12 +28,12 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def upload() = Action { implicit request : Request[AnyContent] =>
-    request.body.asMultipartFormData.map{ picture =>
+    request.body.asMultipartFormData.map{ data =>
       import java.io.File
 
-      val filename = picture.file("picture" ).get.filename
-      val contentType = picture.file("picture").get.contentType;
-      picture.file("picture").get.ref.moveTo( new File( play.Environment.simple().rootPath() + "/tmp/picture/" + filename  ) );
+      val filename = data.file("picture" ).get.filename
+      val contentType = data.file("picture").get.contentType;
+      data.file("picture").get.ref.moveTo( new File( play.Environment.simple().rootPath() + "/tmp/picture/" + filename  ) );
       Ok( views.html.index() );
     }.getOrElse {
       Redirect( routes.HomeController.index() ).flashing(
