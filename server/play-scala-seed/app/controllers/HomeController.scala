@@ -16,6 +16,7 @@ import play.api.Play.current
 @Singleton
 class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
+
   /**
    * Create an Action to render an HTML page.
    *
@@ -34,10 +35,22 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
       val filename = data.file("picture" ).get.filename
       val contentType = data.file("picture").get.contentType;
       data.file("picture").get.ref.moveTo( new File( play.Environment.simple().rootPath() + "/tmp/picture/" + filename  ) );
-      Ok( views.html.index() );
+      Redirect( "/result" );
     }.getOrElse {
       Redirect( routes.HomeController.index() ).flashing(
         "error" -> "Missing file")
+    }
+  }
+
+  def result() = Action { implicit request : Request[AnyContent] =>
+    Ok( views.html.result() );
+  }
+
+  def login() = Action { implicit request : Request[AnyContent] =>
+    request.body.asJson.map{ jsonData =>
+      Ok( views.html.index() );
+    }.getOrElse {
+      Ok( views.html.index() );
     }
   }
 
