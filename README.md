@@ -70,3 +70,8 @@ scipy.spatial.distance.cosine(u, v)
 [Collaborative Filtering README](https://github.com/Lyceum519/MusicAnalyzer/blob/exp/jupyter/README.md)
 
 ---
+=======
+sangwoo Wi
+minjae Lee
+jaehoo Lee
+
