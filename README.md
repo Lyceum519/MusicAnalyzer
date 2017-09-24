@@ -5,8 +5,6 @@ Music Analyzer using tensorflow
 
 - [How to start](#how-to-start)
 - [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Contributing](#contributing)
 - [Community](#community)
 - [Versioning](#versioning)
 - [Creators](#creators)
@@ -27,19 +25,8 @@ Within the download you'll find the following directories and files, logically g
 - audio
 ```
 
-We provide blablabla. And others are available for use with certain browsers' developer tools.
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/Lyceum519/MusicAnalyzer/~) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/Lyceum519/MusicAnalyzer/~).
-
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/Lyceum519/MusicAnalyzer/~CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
 ## Community
 
-- [GithubPage]()
 - Join the official [Slack room](https://lyceum519.slack.com)
 
 ## Versioning
