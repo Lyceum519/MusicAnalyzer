@@ -3,7 +3,7 @@ package utils
 import javax.inject._
 
 /**
-  * Created by lineplus on 2017. 9. 24..
+  * Created by malgogi on 2017. 9. 24..
   */
 
 @Singleton

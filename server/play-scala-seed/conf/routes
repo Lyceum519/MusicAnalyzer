@@ -9,7 +9,6 @@ GET     /result/:id                     controllers.HomeController.result( id:St
 
 + nocsrf
 POST    /upload                     controllers.HomeController.upload
-GET     /test                       controllers.HomeController.testClient
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

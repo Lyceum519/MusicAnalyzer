@@ -24,7 +24,7 @@ def getValue(self, path, filename):
 	print('this is path', path)
 	print('this is filename', filename)
 	# audio_path = "../audio/Electro-loop-120-bpm.wav"
-	audio_path = path
+	audio_path = path + filename;
 	# audio_path = "../audio/Hip-hop-drum-beat-116-bpm.wav"
 	audio_path2 = "../audio/average.wav"
 
