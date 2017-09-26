@@ -27,7 +27,7 @@ Within the download you'll find the following directories and files, logically g
 
 ## Community
 
-- Join the official [Slack room](https://lyceum519.slack.com)
+- Join the official [Slack room](https://join.slack.com/t/lyceum519/shared_invite/enQtMjQ4MTA3NjY1MzAzLWY4OTAzZjk1NmFmOTdjNGJkYjY1NWE5ZDM3YmVkMjIwYjFkNzgyZjBhNzBlMDAyMTUxNzc1NzBiYmE4Zjk5NzU)
 
 ## Versioning
 - v1.0.0(2017.09.09)
