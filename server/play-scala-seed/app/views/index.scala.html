@@ -2,4 +2,16 @@
 
 @main("Welcome to Play") {
   <h1>Enjoy your music!</h1>
+
+  @helper.form(action = routes.HomeController.upload, 'enctype -> "multipart/form-data") {
+
+    <label class="custom-file">
+      <input type="file" name="picture" id="mp3-file-input" data-text="test">
+      <span class="custom-file-control"></span>
+    </label>
+
+
+    <button class="btn btn-primary" type="submit">submit</button>
+
+  }
 }
